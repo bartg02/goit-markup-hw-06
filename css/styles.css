@@ -277,11 +277,7 @@ color: #212121;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero-header-btn:hover,
-.hero-header-btn:focus {
-  background-color: #ffffff;
-  color: #2196f3;
-}
+
 
       /*DESCRIPTION*/
 
@@ -425,7 +421,7 @@ background: #F5F4FA;
         display: block;
         border-radius: 50%;
         color: #afb1b8;
-        background-color: #f5f4fa;
+        background-color: #FFFFFF;
       }
       
       .team-social-link:hover,
