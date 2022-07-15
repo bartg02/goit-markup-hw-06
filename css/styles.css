@@ -46,8 +46,13 @@ img {
   }
   .projects-list-project:hover .portfolio-overlay {
     transform: translateY(0);
-  }
 
+  
+  }
+  .projects-list-project:hover{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
 
   .portfolio-description-text {
     position: absolute;
@@ -164,6 +169,10 @@ top: 24px;
     margin-right: 8px;
 color: #212121;
 }
+.filter-item:hover{
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
+}
 
 .header-contact-item {
     margin-left: 50px;
@@ -179,6 +188,7 @@ color: #212121;
     line-height: 16px;
     letter-spacing: 0.02em;
 
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .navigation-list-link.current {
@@ -388,7 +398,13 @@ background: #F5F4FA;
     color: #212121;
     margin-bottom: 50px;
      }
-    
+     .team-item {
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+          0px 2px 1px rgba(0, 0, 0, 0.2);
+      
+        background-color: var(--white-background-color);
+      }
+
      .team-item:not(:last-child) {
         margin-right: 30px;
      }
@@ -422,6 +438,8 @@ background: #F5F4FA;
         border-radius: 50%;
         color: #afb1b8;
         background-color: #FFFFFF;
+
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
       
       .team-social-link:hover,
@@ -433,6 +451,7 @@ background: #F5F4FA;
       .team-social-icon {
         margin: 12px 0px 0px 12px;
         fill: currentColor;
+
       }
 .team-personal {
     font-weight: 500;
@@ -484,6 +503,8 @@ background: #F5F4FA;
   .client-item {
     width: 170px;
     height: 90px;
+
+    
   }
   
   .client-item:not(:last-child) {
@@ -498,6 +519,8 @@ background: #F5F4FA;
     color: #afb1b8;
     background-color: #fff;
     padding: 16px 32px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .client-link:hover,
@@ -508,6 +531,9 @@ background: #F5F4FA;
   
   .client-icon {
     fill: currentColor;
+
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .client-item:hover,
@@ -546,6 +572,9 @@ background: #F5F4FA;
     font-size: 14px;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
+
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .address-link:hover,
@@ -664,6 +693,9 @@ background: #F5F4FA;
     border-radius: 50%;
     color: #ffffff;
     background-color: #ffffff10;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .footer-social-link:hover,
@@ -747,8 +779,12 @@ background: #F5F4FA;
     width: 30px;
     height: 30px;
     border: none;
-  }
+    cursor: pointer;
+}
 
+.close-btn:hover  {
+  fill: #2196f3
+}
   .form {
     width: 528px;
     margin-left: auto;
